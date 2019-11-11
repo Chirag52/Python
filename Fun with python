@@ -1,0 +1,206 @@
+# Python fun begins
+
+# another one
+if name.lower() == 'chirag':
+    print('Hello Chirag')
+
+password = input('please enter your password')
+if password == 'chirag':
+    print('Access Granted')
+else:
+while True:
+    name = input('Please enter your name')
+    if name.lower() != 'chirag':
+        continue
+    print('Hello chirag enter your password!')
+    password = input('please input your password')
+    if password == 'chirag':
+        break
+print('Thank You !')
+# another fun project
+
+print('My name is')
+for x in range(5):
+    print('jimmy 5 times('+ str(x+1) + ')')
+
+# keep having fun
+
+total =0
+for num in range (101):
+    total = total +num
+    print(total)
+
+# another number game
+
+print('My name is')
+i = 0
+while i< 5:
+    print('jimmy 5 time (',str(i+1),')')
+    i = i+1
+
+for i in range(12,15):
+    print(i)
+for i in range (0,10,2):
+    print(i)
+
+for i in range(5,-1 , -1):
+    print(i)
+for i in range (5):
+    print(random.randint(1,20))
+
+#Number game
+import random
+import sys
+spam = random.randint(1,10)
+if spam in range (0,3):
+    print('spam')
+if spam in range(4,6):
+    print('howdy')
+if spam in range(6,9):
+    print('Greetings')
+
+# another number game
+
+import random
+
+
+def getAnswer(ans):
+    if ans ==1 :
+        return ('this is awsome')
+    if ans ==2 :
+        return ('You suck')
+    if ans ==3 :
+        return ('You are the best')
+    if ans ==4 :
+        return ('Best Number ever')
+    if ans ==5 :
+        return ('this is nuts')
+    if ans ==6 :
+        return ('Jump on me')
+    if ans ==7 :
+        return ('Free food')
+    if ans ==8 :
+        return ('Concentrate and try again')
+    if ans ==9 :
+        return ('you are going to get lucky')
+    if ans ==10 :
+        return ('Lucky you')
+
+print(getAnswer(random.randint(1,10)))
+
+# list fun
+
+animals = ['cats','dogs','mice']
+print(animals[0])
+# try and exception
+
+def spam(divide):
+    try:
+        return 42/divide
+    except ZeroDivisionError:
+        print('invalid statement')
+
+print(spam(2))
+print(spam(12))
+print(spam(0))
+print(spam(1))
+
+
+#Another number game
+
+
+import random
+secNum = random.randint(1,20)
+print('Iam thinking of the number between 1 and 20')
+for guesstaken in range(1,7):
+    guess = int(input('Take a guess'))
+
+    if guess < secNum:
+        print('You are too low')
+    elif guess > secNum:
+        print('You are too High')
+    else:
+        break
+
+if guess == secNum:
+    print('Good Job! you guessed the number in ',guesstaken,'guesses!')
+else:
+    print('Nope you couldnt find the guess')
+
+#just some math
+def collatz(number):
+    if number%2==0:
+         print(number//2)
+    else:
+        print(3 * number +1)
+
+guess = int(input())
+collatz(guess)
+
+#fun with list
+
+
+cat = ['fat','black','loud']
+size, color,disposition = cat
+cat.append('nasty')
+cat.insert(0,'chicken')
+cat.remove('loud')
+print(cat)
+
+print(color)
+print(disposition)
+
+spam=[65,1,3,6,5,7889,3,2,565,6,2,43]
+spam.sort(reverse=True)
+print(spam)
+cat = ['fat','Black','loud','Nasty','Lazy','Bum']
+cat.sort(key=str.lower)
+print(cat)
+
+#magic 8 ball with the list
+
+
+
+#string and tuples
+import random
+import string
+
+
+name = 'chirag'
+for i in name:
+    print('* * *',i,'* * *')
+
+
+name = 'chirag is funny'
+newName = name[0:6] + ' was' +name[9:25]
+print(name)
+print(newName)
+
+name = ['chirag']
+
+
+import random
+
+message = ['It is certain',
+           'It is decidedly so',
+           'Reply hazy try again',
+           'Ask again later',
+           'Concentrate and ask again',
+           'My reply is NO!',
+           'Outlook not so good',
+           'very Doubtful',
+
+print(message[random.randint(0,len(message)) -1])
+
+import copy
+eggs = ['hello', 'there it is ', 'hi this is me']
+chess = copy.copy(eggs)
+chess[1]=42
+print(eggs)
+print(chess)
+
+# dictionary
+
+myCat = {'size ': 'fat', 'color':'brown', 'sound':'loud'}
+print(myCat['size '])
+
